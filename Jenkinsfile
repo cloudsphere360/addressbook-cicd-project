@@ -5,8 +5,10 @@ pipeline {
     }
 
     stages {
-        stage ("Code Checkout Process"){
-            git url: "https://github.com/cloudsphere360/addressbook-cicd-project.git"
+        stage("Code Checkout Process") {
+            steps {
+                git url: "https://github.com/cloudsphere360/addressbook-cicd-project.git"
+            }
         }
     }
 }
