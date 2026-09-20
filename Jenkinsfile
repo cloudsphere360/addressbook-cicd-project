@@ -1,7 +1,7 @@
 pipeline {
 
     agent {
-        label "Jenkins-Server-Agent-1"
+        label "Jenkins Server Agent-1"
     }
 
     stages {
