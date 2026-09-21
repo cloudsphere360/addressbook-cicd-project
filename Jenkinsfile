@@ -17,5 +17,10 @@ pipeline {
                 buildWithMaven()
             }
         }
+        stage ('Build Docker Image') {
+            steps {
+                buildDockerImage()
+            }
+        }
     }
 }
