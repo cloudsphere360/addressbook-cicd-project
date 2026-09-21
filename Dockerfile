@@ -1,5 +1,5 @@
-FROM eclipse-temurin:21-jre
+FROM tomcat:9-jdk21
 
-COPY target/*.jar app.jar
+COPY target/addressbook.war /usr/local/tomcat/webapps/addressbook.war
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["catalina.sh", "run"]
