@@ -13,7 +13,9 @@ pipeline {
             }
         }
         stage ('Build With Maven') {
-            buildWithMaven()
+            steps {
+                buildWithMaven()
+            }
         }
     }
 }
