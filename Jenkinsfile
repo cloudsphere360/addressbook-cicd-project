@@ -12,5 +12,8 @@ pipeline {
                 checkoutCode()
             }
         }
+        stage ('Build With Maven') {
+            buildWithMaven()
+        }
     }
 }
